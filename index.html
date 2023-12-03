@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="VIDEOS AND PICTURE/LOGO.png" type="image/png">
+    <title>HOME PAGE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: rgb(0, 0, 0); 
+            background-image: url('VIDEOS AND PICTURE/GOLD\ CITY.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+            background-size: cover; /* Ensure the background image covers the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            /*backdrop-filter: blur(2px);*/
+        } 
+
+        
+        /******************************************************Header******************************************************/
+        header {
+            background-color: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 190px;
+            color: rgba(255, 255, 255, 0.788);
+            border-bottom: 2px solid rgba(7, 12, 19, 0.882);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .details {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            margin: -10;
+            margin-left: 50px;
+            background-color: #33333300;
+            display: inline-flex; /* Add this line to make the list items align horizontally */
+        }
+
+        nav li {
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+            white-space: nowrap; /* Prevent line breaks within the navigation items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adding transition for smooth animation */
+        }
+
+        nav a:hover {
+            color: #ffffff; /* Change the color on hover to your desired color */
+            text-shadow: 0 0 10px #ffffff; /* Add glow effect on hover */
+            transform: scale(1.1);
+        }
+
+        /* Header 2 Styles */
+        .TOPHeader_container {
+            background-color: #070c13e1;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .stHeader_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /******************************************************************************************************************/
+
+
+        /*********************************************************BODY content*********************************************/
+        .main_content_container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: justify;
+            position: relative; 
+            z-index: 1; 
+
+            background: linear-gradient(to bottom, #070c13de, #0f0404dc);
+        }
+        
+
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .selfintro_container ul {
+            list-style: none;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        .selfintro_container h3 {
+            color: rgb(255, 231, 124);
+            margin-top: 20px;
+        }
+
+        .short-film_container {
+            text-align: center;
+        }
+
+        .Shortfilm {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .social-media-links {
+            margin-top: 20px;
+        }
+
+        .social-media-links a {
+            display: inline-block;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        .social-media-links a:hover {
+            transform: scale(1.2); /* Scale the social media link on hover */
+        }
+
+        .social-media-links img {
+            width: 60px;
+            height: 60px;
+        }
+        /****************************************************************************************************************/
+
+
+        /**********************************************************FOOTER************************************************/
+        footer {
+            background-color: #0f0404c4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-column {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adding transition for smooth color change and box-shadow */
+        }
+
+        .footer-links img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        /* Change color on hover */
+        .footer-links a:hover {
+            color: #caa500; /* Change the color on hover to your desired color */
+            text-shadow: 0 0 10px #caa500; /* Add glow effect on hover */
+            transform: scale(1.1);
+        }
+        /****************************************************************************************************************/
+
+        /****************************************************************************************************************/
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+        header{
+            height: 100px; 
+        }
+        img {
+            max-width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        nav ul {
+            
+            list-style: none;
+            padding: 0px;
+            margin: -10;
+            margin-left: 50px;
+            background-color: #33333300;
+            display: inline-flex; /* Add this line to make the list items align horizontally */
+        }
+
+        nav li {
+            
+            display: inline-block;
+            position: relative;
+            margin-right: 2px;
+            white-space: nowrap; /* Prevent line breaks within the navigation items */
+        }
+
+        nav a {
+            font-size: 10px;
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            display: inline-block;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adding transition for smooth animation */
+        }
+        .details {
+            font-size: 10px;
+            margin-top: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        @media (max-width: 768px) {
+            /* Add your responsive styles here */
+        }
+        .main_content_container {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+/********************400zoom*********************/
+    @media (max-width: 400px) {
+        body {
+            font-size: 14px;
+        }
+        /******************HEADER*********************/
+        header{
+            height: 50px; 
+            border-bottom: 1px solid rgba(19, 19, 19, 0.829);
+        }
+        img {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+        nav ul{
+            margin-left: 20px;
+        }
+        nav li{
+            margin-right: 5px;
+        }
+        nav a {
+            font-size: 4.5px;
+        }
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .details {
+            white-space: nowrap;
+            font-size: 4.5px;
+            margin-top: 0px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        /******************BODY**********************/
+        .main_content_container {
+            display: flex;
+            flex-direction: column;
+        }
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .selfintro_container ul {
+            font-size: 5px;
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+        .short-film_container {
+            text-align: center;
+        }
+
+        .Shortfilm {
+            width: 60%;
+            max-width: 480px;
+        }
+        .social-media-links {
+            margin-top: 5px;
+        }
+        .social-media-links a {
+            display: inline-block;
+            margin-right: 4.5px;
+            transition: transform 0.3s ease;
+        }
+        .social-media-links img {
+            width: 20px;
+            height: 20px;
+        }
+        .footer-column {
+            margin-bottom: 0px;
+            font-size: 5px;
+        }
+        .footer-links img {
+            width: 10px;
+            margin-right: 5px;
+        }
+        .footer-links a{
+            margin-top: 0px;
+        }
+    }   
+         
+    /******************300 zoom in**********************/
+    @media (max-width: 500px) {
+        body {
+            font-size: 14px;
+        }
+        /******************HEADER*********************/
+        header{
+            height: 50px; 
+            border-bottom: 1px solid rgba(19, 19, 19, 0.829);
+        }
+        img {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+        nav ul{
+            margin-left: 20px;
+        }
+        nav li{
+            margin-right: 5px;
+        }
+        nav a {
+            font-size: 4.5px;
+        }
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .details {
+            white-space: nowrap;
+            font-size: 4.5px;
+            margin-top: 0px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        /******************BODY**********************/
+        .main_content_container {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .selfintro_container ul {
+            font-size: 5px;
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+        .short-film_container {
+            text-align: center;
+        }
+
+        .Shortfilm {
+            width: 60%;
+            max-width: 480px;
+        }
+        .social-media-links {
+            margin-top: 5px;
+        }
+        .social-media-links a {
+            display: inline-block;
+            margin-right: 4.5px;
+            transition: transform 0.3s ease;
+        }
+        .social-media-links img {
+            width: 20px;
+            height: 20px;
+        }
+        .footer-column {
+            margin-bottom: 0px;
+            font-size: 5px;
+        }
+        .footer-links img {
+            width: 10px;
+            margin-right: 5px;
+        }
+        .footer-links a{
+            margin-top: 0px;
+        }
+    }  
+   /******************250zoom in*********************/ 
+    @media (max-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+        /******************HEADER*********************/
+        header{
+            height: 50px; 
+            border-bottom: 1px solid rgba(19, 19, 19, 0.829);
+        }
+        img {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+        nav ul{
+            margin-left: 20px;
+        }
+        nav li{
+            margin-right: 5px;
+        }
+        nav a {
+            font-size: 4.5px;
+        }
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .details {
+            white-space: nowrap;
+            font-size: 4.5px;
+            margin-top: 0px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        /******************BODY**********************/
+        .main_content_container {
+            display: flex;
+            flex-direction: column;
+        }
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .selfintro_container ul {
+            font-size: 5px;
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+        .short-film_container {
+            text-align: center;
+        }
+
+        .Shortfilm {
+            width: 60%;
+            max-width: 480px;
+        }
+        .social-media-links {
+            margin-top: 5px;
+        }
+        .social-media-links a {
+            display: inline-block;
+            margin-right: 4.5px;
+            transition: transform 0.3s ease;
+        }
+        .social-media-links img {
+            width: 20px;
+            height: 20px;
+        }
+        .footer-column {
+            margin-bottom: 0px;
+            font-size: 5px;
+        }
+        .footer-links img {
+            width: 10px;
+            margin-right: 5px;
+        }
+        .footer-links a{
+            margin-top: 0px;
+        }
+    } 
+    </style>
+</head>
+<body>
+    <!-- Combined Header -->
+    <header class="TOPHeader_container">
+        <div class="stHeader_container">
+            <!-- Header 1 Content -->
+            <div class="top-section">
+                <img src="VIDEOS AND PICTURE/HHH.jpg" alt="HHH">
+                <div class="details">
+                    <h1>JAIME PEREZ JR.</h1>
+                    <p>HOME PAGE</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="Dropdown">
+                        <span><a href="index.html">HOME PAGE</a></span>
+                    </li>
+                    <li class="Dropdown">
+                        <span><a href="IT111 BLOG.html">ITlll BLOG</a></span>
+                    </li>
+                    <li class="Dropdown">
+                        <span><a href="FlexPage.htm">Flex Page</a></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main_content_container">
+        <!-- Self Introduction -->
+        <div class="selfintro_container">
+            <ul></br></br>
+                <h3>Self Introduction</h3>
+                </br></br>
+                <h3>Introduction</h3>
+                Hello, I'm Jaime B. Perez Jr., and this webpage offers a glimpse into my
+                interests and aspirations. Like many, I enjoy playing games, but I'm just an ordinary guy.
+                My skills include playing the guitar and drawing, and my preferred sport is downhill 
+                biking. I find happiness in pushing my physical limits and discovering things that can 
+                truly awaken my self.</br></br>
+
+                <h3>Hobbies and Passions</h3>
+                Playing games is a common hobby for me, providing a source of 
+                entertainment and relaxation. Additionally, I find joy in playing the guitar and expressing 
+                my creativity through drawing and sketching. Downhill biking is my chosen sport, 
+                offering an adrenaline rush and a connection with the outdoors.</br></br>
+                    
+                    
+                <h3>Pursuit of Knowledge</h3>
+                I have a strong desire to expand my knowledge in various areas. 
+                Specifically, I aim to delve deeper into networking, virtual trading, and hardware. These 
+                pursuits reflect my commitment to continuous learning and personal growth.</br></br>
+
+                <h3>Facing Challenges</h3>
+                Life presents challenges, but I believe that each challenge also 
+                provides an opportunity for growth. While challenges may seem insurmountable, there 
+                is always a way forward. The key is not to seek an escape but to confront and overcome 
+                challenges head-on. In times of difficulty, it's essential to remember that challenges are 
+                trials meant to strengthen us, as emphasized in James 1:2-4 (NIV).</br></br>
+
+                <h3>Conclusion</h3>
+                Embracing challenges and pursuing knowledge are integral parts of my 
+                journey. Through my hobbies, interests, and aspirations, I strive to not only find joy in 
+                the present but also to develop as an individual. Life's challenges, though daunting, are 
+                opportunities for growth, and by facing them with determination, we can emerge 
+                stronger and more resilient.</br></br>
+            </ul>
+        </div>
+        <div class="short-film_container">
+            <video class="Shortfilm" controls>
+                <source src="VIDEOS AND PICTURE/short8years.mp4" type="video/mp4">
+            </video>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/jaime.b.perez.jr" target="_blank" title="Facebook">
+                    <img src="VIDEOS AND PICTURE/FACEBOOKK.png" alt="Facebook">
+                </a>
+                <a href="https://youtube.com/@bikerjaimph8219?si=HuSmPYncYSuycjzb" target="_blank" title="YouTube">
+                    <img src="VIDEOS AND PICTURE/YOUTUBEE.png" alt="YouTube">
+                </a>
+                <a href="https://www.tiktok.com/@jaimeperezr1?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok">
+                    <img src="VIDEOS AND PICTURE/TIKTOK.png" alt="TikTok">
+                </a>
+            </div>
+        </br>
+        </div>
+    </div>
+    <footer><!--FOOTERSECTION-->
+        <div class="footer-credits footer-column">
+            Wepage ni Jaime. v0.1.0.0 Here you can see what I have learned being a 1st-year student in BSIT</br>
+            if you have concerned email me. thepersonaljaime@gmail.com</br></br>
+        </div>
+        <div class="footer-background footer-column">
+            Credits to the Background video owner
+            <div class="footer-links">
+                <a href="https://unsplash.com/photos/city-buildings-during-night-time-Khqmo4T-rs0" target="_blank">
+                    <img src="VIDEOS AND PICTURE/more.png" alt="Background Video">
+                    Background Image
+                </a>
+            </div>
+        </div>
+        <div class="footer-logo footer-column">
+            Credits to the Logo owner</br>
+            <div class="footer-links">
+                <a href="https://www.flaticon.com/free-icon/facebook_3670124?term=facebook&page=1&position=18&origin=search&related_id=3670124" target="_blank">
+                    <img src="VIDEOS AND PICTURE/FACEBOOKK.png" alt="Facebook Logo">
+                    Facebook
+                </a>
+                <a href="https://www.flaticon.com/free-icon/youtube_3670209?term=youtube&page=1&position=17&origin=search&related_id=3670209" target="_blank">
+                    <img src="VIDEOS AND PICTURE/YOUTUBEE.png" alt="YouTube Logo">
+                    YouTube
+                </a>
+                <a href="https://www.flaticon.com/search?word=tiktok" target="_blank">
+                    <img src="VIDEOS AND PICTURE/TIKTOK.png" alt="TikTok Logo">
+                    TikTok
+                </a>
+            </div>
+        </div>
+    </footer><!--FooterEndSection-->
+</body>
+</html>

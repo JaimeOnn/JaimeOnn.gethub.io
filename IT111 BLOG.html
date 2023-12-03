@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="VIDEOS AND PICTURE/LOGO.png" type="image/png">
+    <title>IT111 BLOG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: rgb(0, 0, 0); 
+            background-image: url('VIDEOS AND PICTURE/GOLD\ CITY.jpg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+            background-size: cover; /* Ensure the background image covers the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            /*backdrop-filter: blur(2px);*/
+        }
+
+        /******************************************************Header******************************************************/
+        header {
+            background-color: rgba(255, 123, 0, 0.829);
+            width: 100%;
+            height: 190px;
+            color: rgba(255, 255, 255, 0.788);
+            border-bottom: 2px solid rgba(19, 19, 19, 0.829);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .details {
+            margin-top: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            margin: -10;
+            margin-left: 50px;
+            background-color: #33333300;
+            display: inline-flex; /* Add this line to make the list items align horizontally */
+        }
+
+        nav li {
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+            white-space: nowrap; /* Prevent line breaks within the navigation items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adding transition for smooth animation */
+        }
+
+        nav a:hover {
+            color: rgb(255, 255, 255); /* Change the color on hover to your desired color */
+            text-shadow: 0 0 10px #ffffff; /* Add glow effect on hover */
+            transform: scale(1.1);
+        }
+
+        /* Header 2 Styles */
+        .TOPHeader_container {
+            background-color: #070b0fe1;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .stHeader_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /******************************************************************************************************************/
+
+
+        /*********************************************************BODY content*********************************************/
+        .main_content_container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: justify;
+            position: relative; 
+            z-index: 1; 
+            
+            background: linear-gradient(to bottom, #070c13d3, #0f0404c2);
+        }
+        
+
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .selfintro_container ul {
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+
+        /*.selfintro_container h3 {
+            color: rgb(255, 231, 124);
+            margin-top: 20px;
+        }*/
+
+        .Book_container {
+            text-align: center; /* Center text */
+            margin-top: 0px; /* Adjust margin as needed */
+        }
+
+        .Book_container img {
+            max-width: 50%; /* Make the image responsive */
+            border-radius: 0%;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .Book_container img:hover {
+            color: #caa500; /* Change the color on hover to your desired color */
+            text-shadow: 0 0 10px #caa500; /* Add glow effect on hover */
+            transform: scale(1.1);
+        }
+       
+        .HTMLessay_container {
+            text-align: justify; /* Justify text alignment */
+            color: #f2f2f2;
+            margin-bottom: 40px;
+            line-height: 1.6; /* Adjust line height for better readability */
+        }
+
+        .OutroStatement_container {
+            text-align: center; /* Center text */
+            color: #f2f2f2;
+            margin-bottom: 40px;
+        }
+        /****************************************************************************************************************/
+
+
+        /**********************************************************FOOTER************************************************/
+        footer {
+            background-color: #0f0404c4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-column {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adding transition for smooth color change and box-shadow */
+        }
+
+        .footer-links img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        /* Change color on hover */
+        .footer-links a:hover {
+            color: #caa500; /* Change the color on hover to your desired color */
+            text-shadow: 0 0 10px #caa500; /* Add glow effect on hover */
+            transform: scale(1.1);
+        }
+        /****************************************************************************************************************/
+
+        
+        /****************************************************************************************************************/
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+        header{
+            height: 100px; 
+        }
+        img {
+            max-width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        nav ul {
+            
+            list-style: none;
+            padding: 0px;
+            margin: -10;
+            margin-left: 50px;
+            background-color: #33333300;
+            display: inline-flex; /* Add this line to make the list items align horizontally */
+        }
+
+        nav li {
+            
+            display: inline-block;
+            position: relative;
+            margin-right: 2px;
+            white-space: nowrap; /* Prevent line breaks within the navigation items */
+        }
+
+        nav a {
+            font-size: 10px;
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 10px;
+            display: inline-block;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adding transition for smooth animation */
+        }
+        .details {
+            font-size: 10px;
+            margin-top: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        @media (max-width: 768px) {
+            /* Add your responsive styles here */
+        }
+        .main_content_container {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+        /********************400zoom*********************/
+    @media (max-width: 400px) {
+        body {
+            font-size: 14px;
+        }
+        /******************HEADER*********************/
+        header{
+            height: 50px; 
+            border-bottom: 1px solid rgba(19, 19, 19, 0.829);
+        }
+        img {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+        nav ul{
+            margin-left: 20px;
+        }
+        nav li{
+            margin-right: 5px;
+        }
+        nav a {
+            font-size: 4.5px;
+            text-decoration: none;
+            color: #fff;
+            padding: 0px 5px;
+            display: inline-block;
+            transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adding transition for smooth animation */
+        }
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .details {
+            white-space: nowrap;
+            font-size: 4.5px;
+            margin-top: 0px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        /******************BODY**********************/
+        .main_content_container {
+            display: flex;
+            flex-direction: column;
+        }
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .selfintro_container ul {
+            font-size: 5px;
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+        .short-film_container {
+            text-align: center;
+        }
+
+        .Shortfilm {
+            width: 60%;
+            max-width: 480px;
+        }
+        .social-media-links {
+            margin-top: 5px;
+        }
+        .social-media-links a {
+            display: inline-block;
+            margin-right: 4.5px;
+            transition: transform 0.3s ease;
+        }
+        .social-media-links img {
+            width: 20px;
+            height: 20px;
+        }
+        .footer-column {
+            margin-bottom: 0px;
+            font-size: 5px;
+        }
+        .footer-links img {
+            width: 10px;
+            margin-right: 5px;
+        }
+        .footer-links a{
+            margin-top: 0px;
+        }
+    }  
+
+    /******************300 zoomin**********************/
+    @media (max-width: 500px) {
+        body {
+            font-size: 14px;
+        }
+        /******************HEADER*********************/
+        header{
+            height: 50px; 
+            border-bottom: 1px solid rgba(19, 19, 19, 0.829);
+        }
+        img {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+        nav ul{
+            margin-left: 20px;
+        }
+        nav li{
+            margin-right: 5px;
+        }
+        nav a {
+            font-size: 4.5px;
+        }
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .details {
+            white-space: nowrap;
+            font-size: 4.5px;
+            margin-top: 0px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        /******************BODY**********************/
+        .main_content_container {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .selfintro_container ul {
+            font-size: 5px;
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+        .short-film_container {
+            text-align: center;
+        }
+
+        .Shortfilm {
+            width: 60%;
+            max-width: 480px;
+        }
+        .social-media-links {
+            margin-top: 5px;
+        }
+        .social-media-links a {
+            display: inline-block;
+            margin-right: 4.5px;
+            transition: transform 0.3s ease;
+        }
+        .social-media-links img {
+            width: 20px;
+            height: 20px;
+        }
+        .footer-column {
+            margin-bottom: 0px;
+            font-size: 5px;
+        }
+        .footer-links img {
+            width: 10px;
+            margin-right: 5px;
+        }
+        .footer-links a{
+            margin-top: 0px;
+        }
+    }  
+    
+    @media (max-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+        /******************HEADER*********************/
+        header{
+            height: 50px; 
+            border-bottom: 1px solid rgba(19, 19, 19, 0.829);
+        }
+        img {
+            max-width: 30px;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-top: 0px;
+        }
+        nav ul{
+            margin-left: 20px;
+        }
+        nav li{
+            margin-right: 5px;
+        }
+        nav a {
+            font-size: 4.5px;
+        }
+        .top-section {
+            display: flex;
+            align-items: center;
+        }
+        .details {
+            white-space: nowrap;
+            font-size: 4.5px;
+            margin-top: 0px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        /******************BODY**********************/
+        .main_content_container {
+            display: flex;
+            flex-direction: column;
+        }
+        .selfintro_container {
+            margin-bottom: 40px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .selfintro_container ul {
+            font-size: 5px;
+            list-style: none;
+            padding: 0;
+            color: #f2f2f2;
+        }
+        .short-film_container {
+            text-align: center;
+        }
+
+        .Shortfilm {
+            width: 60%;
+            max-width: 480px;
+        }
+        .social-media-links {
+            margin-top: 5px;
+        }
+        .social-media-links a {
+            display: inline-block;
+            margin-right: 4.5px;
+            transition: transform 0.3s ease;
+        }
+        .social-media-links img {
+            width: 20px;
+            height: 20px;
+        }
+        .footer-column {
+            margin-bottom: 0px;
+            font-size: 5px;
+        }
+        .footer-links img {
+            width: 10px;
+            margin-right: 5px;
+        }
+        .footer-links a{
+            margin-top: 0px;
+        }
+    } 
+    </style>
+</head>
+<body>
+    <!-- Combined Header -->
+    <header class="TOPHeader_container">
+        <div class="stHeader_container">
+            <!-- Header 1 Content -->
+            <div class="top-section">
+                <img src="VIDEOS AND PICTURE/HHH.jpg" alt="HHH">
+                <div class="details">
+                    <h1>JAIME PEREZ JR.</h1>
+                    <p>IT111 BLOG</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="Dropdown">
+                        <span><a href="index.html">HOME PAGE</a></span>
+                    </li>
+                    <li class="Dropdown">
+                        <span><a href="IT111 BLOG.html">ITlll BLOG</a></span>
+                    </li>
+                    <li class="Dropdown">
+                        <span><a href="FlexPage.htm">Flex Page</a></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main_content_container">
+        <!-- Self Introduction -->
+        <div class="selfintro_container">
+            <ul>
+                <br><br><br>
+                    This are the Thing that i Learned  in this Subject.
+                </br></br></br>
+                I learned the besic concenpt of computer security and the basic type of cybercrimes,one of
+                this is the theft, its a common cybercrimes, one of the exmple of this is the illegal 
+                downloading like downloading movies from the illegal websites,
+            </br></br></br></br></br></br>
+                <div class="Book_container">
+                    <a href="https://drive.google.com/file/d/1eELnb2G9XKLRgFEY2GaNW6_P24aa38gC/view?usp=drive_link" target="_blank" title="Case Study">
+                        <img src="VIDEOS AND PICTURE/CaseStudy.jpg" alt="Case Study">
+                    </a>
+                </div></br></br></br></br></br></br></br>
+                <div class="CompEra_container">
+                I also have my cyber group activity which is the case study for the most famous</br> 
+                cybercrimes in the history of cyber wolrd</br></br></br>
+
+                I also learned the time line of computer technology, we have</br></br>
+                MECHANICAL ERA (1642- 1934)</br>
+                VACUUM TUBES ERA (1935-1946)</br>
+                TRANSISTORS ERA (1947-1962)</br>
+                INTEGRATED CIRCUITERA (1963-1972)</br>
+                PC & VLSI ERA (1972-PRESENT)</br>
+                </div>
+                
+    <div class="HTMLessay_container">
+                </br></br></br></br>
+                Lesson 6, in which we examined HTML and CSS, has been one of the most interesting lessons 
+                I've taken on my learning journey. It's like the superhero squad of web design, creating 
+                easy-to-create and amazing-looking web pages. HTML is the structural framework of a webpage; 
+                it arranges the content and ensures that it is all in its proper place. To instruct your computer
+                on how to display your webpage, it's like piecing together puzzle pieces. Next, CSS appears,
+                your fashionable companion who enhances the visual appeal of everything by introducing colors
+                and fonts.</br></br>
+
+                The simplicity of usage of this lesson is what makes it so awesome. It's similar to having your
+                own digital playground where you can construct anything you want. HTML is like playing with Legos;
+                it lets you create the framework of your website. After that, CSS adds the hip colors and styles
+                that make your work pop. Learning HTML was similar to learning the web's language. It involves
+                describing to your computer what each element of your webpage—headings, paragraphs, graphics,
+                and so on—is. With CSS, you may take on the role of designer and specify the dimensions of your
+                headings, color schemes, and overall style.</br></br>
+
+                Looking back, Lesson 6 wasn't just a lesson; it was an adventure into the fun side of web 
+                development. It took something that seemed complex and made it exciting. HTML and 
+                CSS became more than just markup language they became my tools for expressing 
+                creativity online. It's like turning a blank canvas into a masterpiece, and that's pretty
+                amazing!</br></br></br></br></br>
+
+
+                I also found out that computers have four important parts: the things you can touch 
+                (that's hardware), the programs that make them work (that's software), the people use them 
+                (that's us!), and the important facts they use (that's data).These parts work together like
+                a team. The things you can touch help the computer, the programs make it do cool stuff, people
+                use it, and important facts make everything make sense. Learning about all this computer stuff
+                has been like discovering a new kind knowledge. I really learned a lot in this subject, from
+                their history to the modern reality, I gain a lot of knowledge from this subject and I'm hopeful
+                that this subject keeps growing and improving in the future. Cheers to more learning ahead!
+                thank you!</br></br></br>
+               </div>      
+            </ul>
+        </div>
+    </div>
+    <footer><!--FOOTERSECTION-->
+        <div class="footer-credits footer-column">
+            Wepage ni Jaime. v0.1.0.0 Here you can see what I have learned being a 1st-year student in BSIT</br>
+            if you have concerned email me. thepersonaljaime@gmail.com</br></br>
+        </div>
+        <div class="footer-background footer-column">
+            Credits to the Background video owner
+            <div class="footer-links">
+                <a href="https://youtu.be/PUyeOHIk0Vc?feature=shared" target="_blank">
+                    <img src="VIDEOS AND PICTURE/more.png" alt="Background Video">
+                    Background Video
+                </a>
+            </div>
+        </div>
+        <div class="footer-logo footer-column">
+            Credits to the Logo owner</br>
+            <div class="footer-links">
+                <a href="https://www.flaticon.com/free-icon/facebook_3670124?term=facebook&page=1&position=18&origin=search&related_id=3670124" target="_blank">
+                    <img src="VIDEOS AND PICTURE/FACEBOOKK.png" alt="Facebook Logo">
+                    Facebook
+                </a>
+                <a href="https://www.flaticon.com/free-icon/youtube_3670209?term=youtube&page=1&position=17&origin=search&related_id=3670209" target="_blank">
+                    <img src="VIDEOS AND PICTURE/YOUTUBEE.png" alt="YouTube Logo">
+                    YouTube
+                </a>
+                <a href="https://www.flaticon.com/search?word=tiktok" target="_blank">
+                    <img src="VIDEOS AND PICTURE/TIKTOK.png" alt="TikTok Logo">
+                    TikTok
+                </a>
+            </div>
+        </div>
+    </footer><!--FooterEndSection-->
+
+</body>
+</html>
